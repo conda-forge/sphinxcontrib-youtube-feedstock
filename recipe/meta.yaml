@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - sphinx >=0.6
+    - sphinx >=6.1
     - requests
 
 test:
