@@ -1,11 +1,11 @@
-About sphinxcontrib-youtube
-===========================
+About sphinxcontrib-youtube-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-youtube-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sphinx-contrib/youtube
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-youtube-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sphinx "youtube" extension
 
