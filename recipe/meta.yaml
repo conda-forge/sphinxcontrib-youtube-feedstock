@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: eb7871c8af47fd2b5c9727615354b7f95bce554be8be45b9fa8e5bc022f88059
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - flit
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - sphinx >=6.1
     - requests
 
@@ -29,6 +29,7 @@ test:
     - sphinxcontrib.youtube
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
