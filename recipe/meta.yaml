@@ -21,7 +21,7 @@ requirements:
     - flit
   run:
     - python >={{ python_min }}
-    - sphinx >=6.1
+    - sphinx >=7.2
     - requests
 
 test:
